@@ -1,6 +1,7 @@
 import Card from "./Card.tsx";
 
 import perfectstart from "../img/perfectstart.jpg";
+import personalsite from "../img/screenshot.jpg";
 
 export default function Projects() {
   return (
@@ -14,6 +15,12 @@ export default function Projects() {
         </h1>
         <section className="flex md:flex-row py-5 flex-col">
           <Card
+            cardLink="https://github.com/dumpiez/personal-site"
+            cardImage={personalsite}
+            cardName="This Website!"
+            cardDescription="The website you're on is considered one of my projects!"
+          />
+          <Card
             cardLink="https://github.com/dumpiez/perfect-start"
             cardImage={perfectstart}
             cardName="Perfect Start"
@@ -21,8 +28,13 @@ export default function Projects() {
           />
           <Card
             cardLink="https://github.com/dumpiez/tachylite"
-            cardName="Tachylite"
+            cardName="Tachylite (WIP)"
             cardDescription="A note-taking app inspired by Obsidian!"
+          />
+          <Card
+            cardLink="https://github.com/dumpiez/okane"
+            cardName="Okane (WIP)"
+            cardDescription="An Android Money Manager App that Doesn't Look Boring!"
           />
         </section>
       </section>
